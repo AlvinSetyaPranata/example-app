@@ -4,40 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
- <nav class="navbar navbar-light bg-body tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-        Bootstrap
-        </a>
+    
+    <div class="container py-10 px-28">
+    <nav class="w-full flex justify-between items-center">
+        <h1 class="text-2xl font-semibold text-red-500">Myblog</h1>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link">Hello</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active">Hello</a>
-                </li>
-                 <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-
-            </ul>
+        <div class="flex gap-8">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
         </div>
-    </div>
- </nav>
+    </nav>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class="mt-24">
+        <h1 class="text-5xl font-semibold max-w-[20ch] leading-snug">Do something usefull for future</h1>
+    
+        <h3 class="text-lg mt-6 text-gray-500">Add more knowledge, skill and do some usefull thing during ramadhan. not waste your time in this blessed month keep learning because it's a part of ibadah</h3>
+    
+        <div class="w-full text-center">
+            <img src="https://www.logo.wine/a/logo/Laravel/Laravel-Logo.wine.svg" class="max-h-[600px] max-w-[600px] mx-auto mt-12" alt="laravel-logo">
+            <a href="https://www.logo.wine/" class="text-sm">Logo Wine</a>
+        </div>
+
+        <p>
+            
+        </p>
+
+    </div>
+
+    </div>
+
+<script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
