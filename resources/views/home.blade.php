@@ -62,7 +62,7 @@
     </section>
 
 
-    <footer class="w-full grid gap-16 px-16 pt-12 pb-4 bg-black text-white relative">
+    <footer class="w-full grid gap-16 px-16 pt-12 bg-black text-white relative">
         <div class="flex flex-col w-full gap-y-14">
             <div>
                 <!-- brand group -->
@@ -89,14 +89,20 @@
                 </div>
                 <div class="flex flex-col gap-y-6">
                     <p class="font-semibold">Supports</p>
-                    <a href="#">Api References</a>
+                    <a href="#">Api references</a>
                     <a href="#">Help</a>
                     <a href="#">Comunity</a>
+                </div>
+                <div class="flex flex-col gap-y-6">
+                    <p class="font-semibold">Blog</p>
+                    <a href="#">Latest</a>
+                    <a href="#">Articles</a>
+                    <a href="#">Catagories</a>
                 </div>
             </div>
         </div>
 
-        <div class="w-full text-center text-gray-400 font-bold">
+        <div class="w-full text-end text-gray-400 font-bold py-4 border-t-[1.5px] border-t-gray-600">
             <p class="text-sm">Build by &lt/&gt, Created with ❤️</p>
         </div>
     </footer>
