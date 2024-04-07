@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>@yield('title')</title>
+    
 </head>
 <body>
-    
-    <div class="grid place-items-center w-full box-border gap-y-16">
-    <nav class="min-w-full px-16 sticky left-0 top-0 flex bg-white justify-between items-center py-8">
+<nav class="min-w-full px-16 sticky left-0 top-0 z-10 flex bg-white justify-between items-center py-8 box-border">
         <h1 class="text-2xl font-semibold text-red-500">Myblog</h1>
 
-        <div class="flex gap-8">
+        <div class="flex gap-6">
+             <!-- search container  -->
+            <div class="bg-gray-300 p-2 rounded-md flex items-center gap-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[20px] h-[20px]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+
+                <input type="text" class="bg-transparent text-sm outline-none" placeholder="Search blog" />
+            </div>
             <button>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[25px] h-[25px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
@@ -25,49 +32,16 @@
         </div>
     </nav>
 
-
-    <section class="px-16">
-        <h1 class="text-5xl font-semibold max-w-[20ch] leading-tight">That time i learned laravel</h1>
-    
-        <h3 class="text-lg mt-4 text-gray-500">
-            This is my blog for my story in time i get started to learn laravel
-        </h3>
-    
-        <div class="w-full text-center">
-            <img src="https://www.logo.wine/a/logo/Laravel/Laravel-Logo.wine.svg" class="max-h-[600px] max-w-[600px] mx-auto mt-12" alt="laravel-logo">
-            <a href="https://www.logo.wine/" class="hover:underline hover:text-blue-500">Logo Wine</a>
-        </div>
-        
-        <p class="mt-12 text-medium text-lg leading-relaxed">
-            This is my first blog that i've created during learning laravel, because i want to add my knowledge
-            in my backend skill to improve my flexibility to technology that companies used, so the main idea behind why i decide to learn laravel
-            it because laravel is the one of the most uses framework especially in indonesia it has a wide and active community, and it's suite
-            for simple project, thanks to it's feature like illuminate, Symphony, and Sanctum. 
-        </p>
-        
-        <div class="w-full text-center mt-12">
-            <img src="{{ asset('images/laravel-trials.png') }}" class="max-h-[600px] max-w-[600px] mx-auto mb-4" alt="laravel-logo">
-            <span href="https://www.logo.wine/">Laravel installer failed</span>
-        </div>
-        
-        <p class="mt-12 text-medium text-lg leading-relaxed">
-            Even there are some drawbacks in php, when i try to compile from source during installation
-            several flag must be turned on during compilation if i want to install composer, the flag or extensions that should be included is Phar, zlib, curl
-            i know that i can use apt to install php and just install other extension if i face some issues, but in here i just want to learn diffrent things. it tooks a long time during the compilation
-            and somtimes when i finish compile, test and install when i want to install the composer it self there are a lot of issues, start from zlib is not activated, i've try to search the solution in internet
-            but turn out it need to be recompile again with a extensions flag like '--with-zlib', it makes me boring but that one of my new experience, >D<
-        </p>
-
-
+    <section class="px-16 min-h-[30vh]">
+        @yield('content')
     </section>
 
-
-    <footer class="w-full grid gap-16 px-16 pt-12 bg-black text-white relative">
+    <footer class="w-full grid gap-16 px-16 pt-8 bg-black text-white relative">
         <div class="flex flex-col w-full gap-y-14">
             <div>
                 <!-- brand group -->
                 <h1 class="text-4xl font-bold">Myblog</h1>
-                <p class="mt-6">The tiredness that you feel now is better than the one you feel later</p>
+                <p class="mt-4">The tiredness that you feel now is better than the one you feel later</p>
 
                 <!-- socials links -->
                 <div class="flex mt-8 gap-x-8">
@@ -91,7 +65,7 @@
                     <p class="font-semibold">Supports</p>
                     <a href="#">Api references</a>
                     <a href="#">Help</a>
-                    <a href="#">Comunity</a>
+                    <a href="#">Buy me coffe</a>
                 </div>
                 <div class="flex flex-col gap-y-6">
                     <p class="font-semibold">Blog</p>
@@ -107,6 +81,7 @@
         </div>
     </footer>
 
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </body>
 </html>
