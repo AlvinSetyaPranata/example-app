@@ -1,17 +1,16 @@
-@extends('base')
+@extends('layouts/base')
 
-@title('home')
+@section('title', 'Details')
 
 @section('content')
-    <div class="grid place-items-center w-full box-border gap-y-16">
+    <div class="mt-16 pb-24">
 
-    @section('main-content')
-    <h1 class="text-5xl font-semibold max-w-[20ch] leading-tight">That time i learned laravel</h1>
-    
+        <h1 class="text-5xl font-semibold max-w-[20ch] leading-tight">That time i learned laravel</h1>
+        
         <h3 class="text-lg mt-4 text-gray-500">
             This is my blog for my story in time i get started to learn laravel
         </h3>
-    
+        
         <div class="w-full text-center">
             <img src="https://www.logo.wine/a/logo/Laravel/Laravel-Logo.wine.svg" class="max-h-[600px] max-w-[600px] mx-auto mt-12" alt="laravel-logo">
             <a href="https://www.logo.wine/" class="hover:underline hover:text-blue-500">Logo Wine</a>
@@ -36,8 +35,5 @@
             and somtimes when i finish compile, test and install when i want to install the composer it self there are a lot of issues, start from zlib is not activated, i've try to search the solution in internet
             but turn out it need to be recompile again with a extensions flag like '--with-zlib', it makes me boring but that one of my new experience, >D<
         </p>
-    @endsection
-
-</body>
-</html>
-@endsection
+    </div>
+        @endsection
